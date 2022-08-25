@@ -1,34 +1,32 @@
 <html>
-  <head>
-    <title>Mapel</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-    <center>
-      <h1>Jadwal Pelajaran</h1>
-      <h2 id="displayDateTime"></h2>
-      <br>
-      <img
-        src="https://i.postimg.cc/WpYdsjRF/image-2022-08-20-075202028.png" width="400"
-        alt="mapel"
-      />
-      <h2 id="displayDateTime2"></h2>
-    </center>
-  </body>
-  <script type="text/javascript">
-    var today = new Date();
-    var day = today.getDay();
-    var daylist = [
-      "Minggu/Libur",
-      "Senin",
-      "Selasa",
-      "Rabu",
-      "Kamis",
-      "Jumat",
-      "Sabtu/Libur",
-    ];
-    var seragam = [
+
+<head>
+  <title>Mapel</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <center>
+    <h1>Jadwal Pelajaran</h1>
+    <h2 id="displayDateTime" ></h2>
+    <img src="https://i.postimg.cc/WpYdsjRF/image-2022-08-20-075202028.png" width="400" alt="mapel style="
+      max-width:100%;height:auto;" />
+    <h2 id="displayDateTime2"></h2>
+  </center>
+</body>
+<script type="text/javascript">
+  var today = new Date();
+  var day = today.getDay();
+  var daylist = [
+    "Minggu/Libur",
+    "Senin",
+    "Selasa",
+    "Rabu",
+    "Kamis",
+    "Jumat",
+    "Sabtu/Libur",
+  ];
+  var seragam = [
     " - ",
     "PSAS Lengkap - Baju Bengkel",
     "Putih - Abu",
@@ -36,8 +34,8 @@
     "Batik",
     "Muslim",
     " - ",
-    ];
-    var mapel = [
+  ];
+  var mapel = [
     " - ",
     "PPK, DDG, PEMDAS",
     "DDG, B INGGRIS, SEJARAH, SENI BUDAYA",
@@ -45,8 +43,8 @@
     "INFORMATIKA, PKN, MATEMATIKA",
     "IPAS, SUNDA",
     " - ",
-    ]; 
-    var tambahan = [
+  ];
+  var tambahan = [
     "Rebahan ampe gila/prepare senin ",
     "Aksesoris Lengkap, Laptop, Mental yg kuat :v",
     "Laptop buat DDG, Kamus Inggris",
@@ -54,8 +52,8 @@
     "Laptop ( kalo disuruh )",
     "Jumsih",
     "Kerjakan PR bila ada",
-    ];
-    var guru = [
+  ];
+  var guru = [
     " - ",
     "Bu Nina, Bu Susan, Pak Angga",
     "Mr. Yoka, Bu Nunung, Bu Nira",
@@ -63,8 +61,8 @@
     "Pak Ayep, Pak Arif, Bu Sri Rahayu",
     "Bu Yulianti, Bu Mike",
     " - ",
-    ];
-    var ruang = [
+  ];
+  var ruang = [
     " - ",
     "Bengkel",
     "Bengkel, Ruang 31, Ruang Seni",
@@ -72,17 +70,17 @@
     "Ruang 14",
     "Ruang 14",
     " - ",
-    ];
-    var daylist2 = [
-      "Senin",
-      "Selasa",
-      "Rabu",
-      "Kamis",
-      "Jumat",
-      "Sabtu/Libur",
-      "Minggu/Libur",
-    ];
-    var seragam2 = [
+  ];
+  var daylist2 = [
+    "Senin",
+    "Selasa",
+    "Rabu",
+    "Kamis",
+    "Jumat",
+    "Sabtu/Libur",
+    "Minggu/Libur",
+  ];
+  var seragam2 = [
     "PSAS Lengkap - Baju Bengkel",
     "Putih - Abu",
     "Pramuka dan Baju Olahraga",
@@ -90,8 +88,8 @@
     "Muslim",
     " - ",
     " - ",
-    ];
-    var mapel2 = [
+  ];
+  var mapel2 = [
     "PPK, DDG, PEMDAS",
     "DDG, B INGGRIS, SEJARAH, SENI BUDAYA",
     "PABP, PJOK, B INDONESIA",
@@ -99,8 +97,8 @@
     "IPAS, SUNDA",
     " - ",
     " - ",
-    ]; 
-    var tambahan2 = [
+  ];
+  var tambahan2 = [
     "Aksesoris Lengkap, Laptop, Mental yg kuat :v",
     "Laptop buat DDG, Kamus Inggris",
     "Buku Literasi, Alat Pembinaan",
@@ -108,8 +106,8 @@
     "Jumsih",
     " - ",
     " - ",
-    ];
-    var ruang2 = [
+  ];
+  var ruang2 = [
     "Bengkel",
     "Bengkel, Ruang 31, Ruang Seni",
     "Ruang 14, Lapang Olahraga",
@@ -117,19 +115,20 @@
     "Ruang 14",
     " - ",
     " - ",
-    ];
-    var date =
-      today.getDate() +
-      "-" +
-      (today.getMonth() + 1) +
-      "-" +
-      today.getFullYear();
-    var date = date;
+  ];
+  var date =
+    today.getDate() +
+    "-" +
+    (today.getMonth() + 1) +
+    "-" +
+    today.getFullYear();
+  var date = date;
 
-    document.getElementById("displayDateTime").innerHTML =
-      "<br>Tanggal : " + date + " <br> Sekarang hari : " + daylist[day] +  "<br> Mapel : " + mapel[day] + "<br> Ruangan : " + ruang[day] + "<br> Guru : "  + guru[day] + "<br> Tambahan : " + tambahan[day];
+  document.getElementById("displayDateTime").innerHTML =
+    "<br>Tanggal : " + date + " <br> Sekarang hari : " + daylist[day] + "<br> Mapel : " + mapel[day] + "<br> Ruangan : " + ruang[day] + "<br> Guru : " + guru[day] + "<br> Tambahan : " + tambahan[day];
 
-      document.getElementById("displayDateTime2").innerHTML =
-      "untuk besok " + "hari " + daylist2[day] + "<br>Seragam besok : " + seragam2[day] + "<br> Mapel besok : " + mapel2[day] + "<br> Ruangan : " + ruang2[day] + "<br> Tambahan : " + tambahan2[day];
-  </script>
+  document.getElementById("displayDateTime2").innerHTML =
+    "untuk besok " + "hari " + daylist2[day] + "<br>Seragam besok : " + seragam2[day] + "<br> Mapel besok : " + mapel2[day] + "<br> Ruangan : " + ruang2[day] + "<br> Tambahan : " + tambahan2[day];
+</script>
+
 </html>
