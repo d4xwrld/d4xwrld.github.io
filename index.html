@@ -1,134 +1,24 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Mapel</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paralax Effect</title>
+    <link rel="stylesheet" href="https://github.com/d4xwrld/parallax/blob/main/style.css">
 </head>
 <body>
-  <center>
-    <h1>Jadwal Pelajaran</h1>
-    <h2 id="displayDateTime" ></h2>
-    <img src="https://i.postimg.cc/WpYdsjRF/image-2022-08-20-075202028.png" width="400" alt="mapel style="
-      max-width:100%;height:auto;" />
-    <h2 id="displayDateTime2"></h2>
-  </center>
+    <div class="paralax">
+        <img src="https://raw.githack.com/d4xwrld/d4xwrld.github.io/main/stars.png" id="stars">
+        <img src="https://raw.githack.com/d4xwrld/d4xwrld.github.io/main/meteorid.png" id="meteorid">
+        <img src="https://raw.githack.com/d4xwrld/d4xwrld.github.io/main/rocket.png" id="rocket">
+        <h1 id="text">I Love You in <br>Every Universe</h1>
+        <a href="#" id="button">Explore</a>
+    </div>
+    <div class="description">
+        <h2>Everything about you</h2><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In velit harum sequi magnam assumenda, eos laborum fugit voluptatem reiciendis quia odio neque voluptas aliquam culpa animi dolorum. Quidem, quasi ea! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem odit ex alias quibusdam voluptates commodi quas accusantium dolorem laudantium iste, illo reiciendis explicabo, laboriosam numquam optio, quaerat amet praesentium eius quisquam tempore expedita eveniet aperiam doloribus. Maxime itaque odio assumenda maiores sequi molestiae praesentium debitis. Eum, impedit nesciunt quo rem neque, facere quos sequi suscipit animi commodi non error, quisquam tempore optio perferendis itaque maxime quis magni corrupti delectus sunt quia? Maiores ipsam commodi amet quasi perspiciatis dicta error corrupti quia nobis impedit similique accusantium tenetur nam voluptas rerum, tempore quidem quibusdam beatae sunt placeat at. Dolore voluptas quam ad iste veritatis provident velit non, rerum culpa omnis libero exercitationem explicabo corrupti sit numquam magni? Eveniet modi tempora soluta doloribus explicabo beatae perferendis nesciunt tenetur sequi laboriosam eos officia repellat, harum illo dignissimos ipsam iste natus molestiae sint, voluptas quisquam ex odio assumenda. Delectus beatae modi sunt quasi exercitationem nulla voluptatibus, omnis fugit, perferendis quae, nisi totam eaque! A, reprehenderit. Praesentium iste distinctio ea in ut porro facere amet, animi dolore voluptatibus? Eum, vero accusamus recusandae velit, repudiandae id blanditiis, sapiente totam eius minus mollitia eligendi magnam? Perferendis, ipsa natus. Consectetur, in et. Vero deleniti tenetur quidem iste deserunt delectus!</p>
+    </div>
+    <script src="https://github.com/d4xwrld/parallax/blob/main/style.css"></script>
 </body>
-<script type="text/javascript">
-  var today = new Date();
-  var day = today.getDay();
-  var daylist = [
-    "Minggu/Libur",
-    "Senin",
-    "Selasa",
-    "Rabu",
-    "Kamis",
-    "Jumat",
-    "Sabtu/Libur",
-  ];
-  var seragam = [
-    " - ",
-    "PSAS Lengkap - Baju Bengkel",
-    "Putih - Abu",
-    "Pramuka",
-    "Batik",
-    "Muslim",
-    " - ",
-  ];
-  var mapel = [
-    " - ",
-    "PPK, DDG, PEMDAS",
-    "DDG, B INGGRIS, SEJARAH, SENI BUDAYA",
-    "PABP, PJOK, B INDONESIA",
-    "INFORMATIKA, PKN, MATEMATIKA",
-    "IPAS, SUNDA",
-    " - ",
-  ];
-  var tambahan = [
-    "Rebahan ampe gila/prepare senin ",
-    "Aksesoris Lengkap, Laptop, Mental yg kuat :v",
-    "Laptop buat DDG, Kamus Inggris",
-    "Buku Literasi, Alat Pembinaan",
-    "Laptop ( kalo disuruh )",
-    "Jumsih",
-    "Kerjakan PR bila ada",
-  ];
-  var guru = [
-    " - ",
-    "Bu Nina, Bu Susan, Pak Angga",
-    "Mr. Yoka, Bu Nunung, Bu Nira",
-    "Pak Lulu, Pak Cipta, Bu Iis/Ismet",
-    "Pak Ayep, Pak Arif, Bu Sri Rahayu",
-    "Bu Yulianti, Bu Mike",
-    " - ",
-  ];
-  var ruang = [
-    " - ",
-    "Bengkel",
-    "Bengkel, Ruang 31, Ruang Seni",
-    "Ruang 14, Lapang Olahraga",
-    "Ruang 14",
-    "Ruang 14",
-    " - ",
-  ];
-  var daylist2 = [
-    "Senin",
-    "Selasa",
-    "Rabu",
-    "Kamis",
-    "Jumat",
-    "Sabtu/Libur",
-    "Minggu/Libur",
-  ];
-  var seragam2 = [
-    "PSAS Lengkap - Baju Bengkel",
-    "Putih - Abu",
-    "Pramuka dan Baju Olahraga",
-    "Batik",
-    "Muslim",
-    " - ",
-    " - ",
-  ];
-  var mapel2 = [
-    "PPK, DDG, PEMDAS",
-    "DDG, B INGGRIS, SEJARAH, SENI BUDAYA",
-    "PABP, PJOK, B INDONESIA",
-    "INFORMATIKA, PKN, MATEMATIKA",
-    "IPAS, SUNDA",
-    " - ",
-    " - ",
-  ];
-  var tambahan2 = [
-    "Aksesoris Lengkap, Laptop, Mental yg kuat :v",
-    "Laptop buat DDG, Kamus Inggris",
-    "Buku Literasi, Alat Pembinaan",
-    "Laptop ( kalo disuruh )",
-    "Jumsih",
-    " - ",
-    " - ",
-  ];
-  var ruang2 = [
-    "Bengkel",
-    "Bengkel, Ruang 31, Ruang Seni",
-    "Ruang 14, Lapang Olahraga",
-    "Ruang 14",
-    "Ruang 14",
-    " - ",
-    " - ",
-  ];
-  var date =
-    today.getDate() +
-    "-" +
-    (today.getMonth() + 1) +
-    "-" +
-    today.getFullYear();
-  var date = date;
-
-  document.getElementById("displayDateTime").innerHTML =
-    "<br>Tanggal : " + date + " <br> Sekarang hari : " + daylist[day] + "<br> Mapel : " + mapel[day] + "<br> Ruangan : " + ruang[day] + "<br> Guru : " + guru[day] + "<br> Tambahan : " + tambahan[day];
-
-  document.getElementById("displayDateTime2").innerHTML =
-    "untuk besok " + "hari " + daylist2[day] + "<br>Seragam besok : " + seragam2[day] + "<br> Mapel besok : " + mapel2[day] + "<br> Ruangan : " + ruang2[day] + "<br> Tambahan : " + tambahan2[day];
-</script>
-
 </html>
