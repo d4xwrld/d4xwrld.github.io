@@ -10,7 +10,16 @@
 - 💻 Im Code a design.
 
 - ⚡ I usually upload my homework to my Github Account.
+
 ---
+
+<div align="center">
+- My Contribution on this year! -
+<img src="https://github.com/d4xwrld/d4xwrld.github.io/blob/output/github-contribution-grid-snake-dark.svg" />
+</div>
+
+---
+
 <div class="lang" align="center">
 💡 Currently Learning on 💡 <br> <br>
 
