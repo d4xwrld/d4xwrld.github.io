@@ -5,7 +5,7 @@
 ---
 
 👨‍💻 About Myself
-- 🌐 I’m 2nd Grade student at SMKN 1 Katapang as a Junior Software Engineer and contributing to frontend and backend for building web applications.
+- 🌐 I’m currently working as Data Engineering
 
 - 💻 Im Code a design.
 
